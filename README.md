@@ -25,14 +25,10 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- The game's purpose is to practice debugging an AI-generated Streamlit app by observing broken behavior, tracing logic, and validating fixes with tests.
+- Bugs found included backwards higher/lower hints, a misleading Hard difficulty range, new-game state not resetting correctly, even-attempt type switching (`int` to `str`) causing wrong comparisons, and score inconsistencies on incorrect guesses.
+- Fixes applied included refactoring core logic into `logic_utils.py`, repairing `check_guess`, `update_score`, and difficulty range logic, resetting status on new game, removing string-conversion comparison bugs, and adding regression-focused pytest coverage.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
-
-## 🚀 Stretch Features
-
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+![Winning game screenshot](assets/winning-game.png)
